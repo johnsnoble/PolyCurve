@@ -1,0 +1,18 @@
+name = "PolyCurve"
+uuid = "0bd1386c-c058-459a-985f-00d68ec3cab3"
+authors = ["johnsnoble <johnsnoble1@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+ClassicalOrthogonalPolynomials = "b30e2e7b-c4ee-47da-9d5f-2c5c27239acd"
+Debugger = "31a5f54b-26ea-5ae9-a837-f05ce5417438"
+InfiniteArrays = "4858937d-0d70-526a-a4dd-2d5cb5dd786c"
+Polynomials = "f27b6e38-b328-58d1-80ce-0feddd5e7a45"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+ClassicalOrthogonalPolynomials = "0.14.2"
+Debugger = "0.7.10"
+InfiniteArrays = "0.15.3"
+Polynomials = "4.0.13"
+Test = "1.11.0"
