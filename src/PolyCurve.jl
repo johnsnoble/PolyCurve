@@ -1,5 +1,5 @@
-function poly_exponent(coeffs, N)
-    M = length(coeffs)
+function poly_exponent(qs, N)
+    M = length(qs)
     il, jl = N, (N*(M-1)+1)
     dp = rand(0:0, il, jl)
 
@@ -16,8 +16,15 @@ function poly_exponent(coeffs, N)
     return dp
 end
 
-# Some testing code
+function poly_compose(ps, qs)
+    N = length(ps)
+    coeffs = poly_exponent(qs, N)
+    return ps'*coeffs
+end
+
+# Some test code
 # const N = 4
 # const M = 3
 # qs = [rand(0:5, M-1); 1]
+# ps = [rand(0:5, N-1); 1]
 
